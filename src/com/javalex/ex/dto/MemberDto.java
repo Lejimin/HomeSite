@@ -1,4 +1,4 @@
-package com.javalec.ex;
+package com.javalex.ex.dto;
 
 public class MemberDto {
 	

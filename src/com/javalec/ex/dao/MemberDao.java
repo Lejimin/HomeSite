@@ -1,4 +1,4 @@
-package com.javalec.ex;
+package com.javalec.ex.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;

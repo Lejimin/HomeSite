@@ -6,6 +6,9 @@ import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.javalec.ex.dao.MemberDao;
+import com.javalex.ex.dto.MemberDto;
+
 public class MemberInsert implements Service {
 
 	@Override

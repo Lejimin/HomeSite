@@ -13,6 +13,7 @@
 	ID : <input type="text" name="id"><br>
 	PW : <input type="password" name="pw"><br>
 	<input type="submit" value="로그인">
+	<button><a href="Join.jsp" style="text-decoration: none; color: black;">회원가입</a></button>
 </form>
 
 </body>

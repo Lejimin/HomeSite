@@ -6,7 +6,13 @@
 <meta charset="UTF-8">
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<title>회원가입</title>
+<title>게시판 홈페이지</title>
+<style>
+	#contimg1{width: 100%; height: 700px;}
+	#contimg2{width: 100%; height: 700px;}
+	#contimg3{width: 100%; height: 700px;}
+	#contimg4{width: 100%; height: 700px;}	
+</style>
 </head>
 <body>
 <div id="header">
@@ -27,15 +33,33 @@
   		</div>
 	</nav>
 </div>
-<h3>회원가입</h3>
-<form action="insert.do" method="post" name="reg_frm">
-	<label for="id">ID : </label><input id="id" type="text" name="id"><br>
-	<label for="pw">pw : </label><input id="pw" type="password" name="pw"><br>
-	<label for="name">name : </label><input id="name" type="text" name="name"><br>
-	<label for="email">email : </label><input id="email" type="text" name="email"><br>
-	<label for="addr">address : </label><input id="addr" type="text" name="addr"><br>
-	<input type="submit" value="회원가입">
-</form>
+
+<div id="content-top">
+	<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active" data-bs-interval="2000">
+	      <img src="img/cont1.jpg" class="d-block w-100" id="contimg1">
+	    </div>
+	    <div class="carousel-item" data-bs-interval="2000">
+	      <img src="img/cont2.jpg" class="d-block w-100" id="contimg2">
+	    </div>
+	    <div class="carousel-item" data-bs-interval="2000">
+	      <img src="img/cont3.jpg" class="d-block w-100" id="contimg3">
+	    </div>
+	    <div class="carousel-item" data-bs-interval="2000">
+	      <img src="img/cont4.png" class="d-block w-100" id="contimg4">
+	    </div>
+	  </div>
+	  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Previous</span>
+	  </button>
+	  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="visually-hidden">Next</span>
+	  </button>
+	</div>
+</div>
 
 </body>
 </html>

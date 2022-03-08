@@ -22,16 +22,13 @@ public class BDao {
 	
 	//BDao생성하자마자 db연결에 필요한 객체 생성
 	//datasource 통하여 db접속
-	private Connection getConnection() {
+	public BDao() {
 		try {
-			Context ctx;
-			ctx = new InitialContext();
-			DataSource dSource = (DataSource)ctx.lookup("java:comp/env/jdbc/mysql");
-			conn = dSource.getConnection();
+			Context ctx = new InitialContext();
+			datasource = (DataSource)ctx.lookup("java:comp/env/jdbc/mysql");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		return conn;
 	}
 	
 	

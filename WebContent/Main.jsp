@@ -12,13 +12,22 @@
 	#contimg2{width: 100%; height: 700px;}
 	#contimg3{width: 100%; height: 700px;}
 	#contimg4{width: 100%; height: 700px;}	
+	
+	#map{width:100%; height:400px;}
+	
+	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
+	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
+	#footbox>img{width:60px; height:60px; margin-left:27px;}
+	#footbox>p{color:white; font-size:18px; text-align:center;}
+	
+	
 </style>
 </head>
 <body>
 <div id="header">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   		<div class="container-fluid">
-    		<a class="navbar-brand" href="#">커뮤니티</a>
+    		<a class="navbar-brand" href="Main.jsp">여행 커뮤니티</a>
     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       			<span class="navbar-toggler-icon"></span>
     		</button>
@@ -58,6 +67,31 @@
 	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 	    <span class="visually-hidden">Next</span>
 	  </button>
+	</div>
+</div>
+
+
+	<div id="map"></div>
+		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c735b0e845baf5967c2d6ad8bc8e71b"></script>
+		<script>
+			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+			    mapOption = { 
+			        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+			        level: 3 // 지도의 확대 레벨
+			    };
+			
+			// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+			var map = new kakao.maps.Map(mapContainer, mapOption); 
+		</script>
+		
+		
+<div id="footer">
+	<div id="footbox">
+		<img src="img/Facebookicon.png">
+		<img src="img/Instagramicon.png">
+		<img src="img/Twittericon.png"><br><br><br>
+		<p>Call : 02-050-5555</p><br>
+		<p>Travel Community</p>
 	</div>
 </div>
 

@@ -8,6 +8,9 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <title>게시판</title>
 <style>
+	#content{width:100%; height:500px;} 
+	#content>table{margin: 60px 600px;}
+
 	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
 	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
 	#footbox>img{width:60px; height:60px; margin-left:27px;}
@@ -18,7 +21,7 @@
 <div id="header">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   		<div class="container-fluid">
-    		<a class="navbar-brand" href="#">커뮤니티</a>
+    		<a class="navbar-brand" href="Home.jsp">여행 커뮤니티</a>
     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       			<span class="navbar-toggler-icon"></span>
     		</button>
@@ -34,6 +37,7 @@
 	</nav>
 </div>
 
+<div id="content">
 	<table width="500" cellpadding="0" cellspacing="0" border="1">
 	
 		<form action="modify.do">
@@ -67,7 +71,7 @@
 		</form>
 	
 	</table>
-	
+</div>	
 	
 	
 	<div id="footer">

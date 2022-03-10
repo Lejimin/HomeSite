@@ -8,12 +8,13 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <title>홈페이지</title>
 <style>
-	#contimg1{width: 100%; height: 700px;}
-	#contimg2{width: 100%; height: 700px;}
-	#contimg3{width: 100%; height: 700px;}
-	#contimg4{width: 100%; height: 700px;}	
+	#contimg1{width: 100%; height: 600px;}
+	#contimg2{width: 100%; height: 600px;}
+	#contimg3{width: 100%; height: 600px;}
+	#contimg4{width: 100%; height: 600px;}	
 	
-	#map{width:100%; height:400px;}
+	#h{margin-left:330px;}
+	#map{width:50%; height:400px; margin-top:5px;margin-left:5px; border:1px solid #212529;}
 	
 	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
 	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
@@ -71,17 +72,27 @@
 </div>
 
 
+	<h4 id="h">찾아오시는 길</h4>
 	<div id="map"></div>
 		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c735b0e845baf5967c2d6ad8bc8e71b"></script>
 		<script>
 			var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
 			    mapOption = { 
-			        center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+			        center: new kakao.maps.LatLng(35.863415, 128.593421), // 지도의 중심좌표
 			        level: 3 // 지도의 확대 레벨
 			    };
 			
 			// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
 			var map = new kakao.maps.Map(mapContainer, mapOption); 
+			var markerPosition  = new kakao.maps.LatLng(35.863415, 128.593421); 
+
+			// 마커를 생성합니다
+			var marker = new kakao.maps.Marker({
+			    position: markerPosition
+			});
+
+			// 마커가 지도 위에 표시되도록 설정합니다
+			marker.setMap(map);
 		</script>
 		
 		

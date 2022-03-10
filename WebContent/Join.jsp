@@ -9,6 +9,16 @@
 <title>회원가입</title>
 
 <style>
+	#content{width:50%; height:700px; border:1px solid skyblue; margin: 20px 453px; background-color:skyblue; border-radius:20px;}
+	#content>form{margin-left:170px; margin-top:20px;}
+	#id{width:500px; height:50px;}
+	#pw{width:500px; height:50px;}
+	#name{width:500px; height:50px;}
+	#email{width:500px; height:50px;}
+	#addr{width:500px; height:50px;}
+	#sign{width:200px; height:50px; margin-left:150px;}
+	
+	
 	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
 	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
 	#footbox>img{width:60px; height:60px; margin-left:27px;}
@@ -19,7 +29,7 @@
 <div id="header">
 	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   		<div class="container-fluid">
-    		<a class="navbar-brand" href="#">커뮤니티</a>
+    		<a class="navbar-brand" href="Main.jsp">여행 커뮤니티</a>
     		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       			<span class="navbar-toggler-icon"></span>
     		</button>
@@ -34,15 +44,36 @@
   		</div>
 	</nav>
 </div>
-<h3>회원가입</h3>
-<form action="insert.do" method="post" name="reg_frm">
-	<label for="id">ID : </label><input id="id" type="text" name="id"><br>
-	<label for="pw">pw : </label><input id="pw" type="password" name="pw"><br>
-	<label for="name">name : </label><input id="name" type="text" name="name"><br>
-	<label for="email">email : </label><input id="email" type="text" name="email"><br>
-	<label for="addr">address : </label><input id="addr" type="text" name="addr"><br>
-	<input type="submit" value="회원가입">
-</form>
+
+
+<div id="content">
+ 	<form class="row g-3" action="insert.do" method="post" name="reg_frm">
+ 	  <h1>회원가입</h1>
+	  <div class="col-md-12">
+	    <label for="id" class="form-label">ID</label>
+	    <input type="text" name="id" class="form-control" id="id">
+	  </div>
+	  <div class="col-md-12">
+	    <label for="pw" class="form-label">Password</label>
+	    <input type="password" name="pw" class="form-control" id="pw">
+	  </div>
+	  <div class="col-md-12">
+	    <label for="name" class="form-label">Name</label>
+	    <input type="text" name="name" class="form-control" id="name">
+	  </div>
+	  <div class="col-md-12">
+	    <label for="email" class="form-label">Email</label>
+	    <input type="email" name="email" class="form-control" id="email">
+	  </div>
+	  <div class="col-12">
+	    <label for="addr" class="form-label">Address</label>
+	    <input type="text" name="addr" class="form-control" id="addr" placeholder="1234 Main St">
+	  </div>
+	  <div class="col-12">
+	    <button type="submit" class="btn btn-primary" id="sign">Sign in</button>
+	  </div>
+	</form> 
+</div>
 
 <div id="footer">
 	<div id="footbox">

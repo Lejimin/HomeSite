@@ -20,25 +20,19 @@ public class MemberInsert implements Service {
 		String email = request.getParameter("email");
 		String addr = request.getParameter("addr");
 		dao.insertMember(id, pw, name, email, addr);
-		
-		if(id.isEmpty()||pw.isEmpty()||name.isEmpty()||email.isEmpty()||addr.isEmpty()) {
-			System.out.println("회원가입에 실패하였습니다.");
-			try {
-				response.sendRedirect("Join.jsp");
-			} catch (IOException e) {
-				e.printStackTrace();
-			}
-		}else {
-			System.out.println("회원가입에 성공하였습니다.");
-			try {
-				response.sendRedirect("login.jsp");
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
+	
+
+		/*
+		 * if(id.isEmpty()||pw.isEmpty()||name.isEmpty()||email.isEmpty()||addr.isEmpty(
+		 * )) { System.out.println("회원가입에 실패하였습니다."); try {
+		 * response.sendRedirect("Join.jsp"); } catch (IOException e) {
+		 * e.printStackTrace(); } }else { System.out.println("회원가입에 성공하였습니다."); try {
+		 * response.sendRedirect("login.jsp"); } catch (Exception e2) {
+		 * e2.printStackTrace(); } }
+		 */
 		
 		return null;
-		
+
 	}
 
 }

@@ -69,6 +69,7 @@ public class FrontController extends HttpServlet {
 		if(com.equals("/insert.do")) {
 			service = new MemberInsert();
 			service.execute(request, response);
+			viewPage = "login.jsp";
 		}else if(com.equals("/list.do")) {
 			command = new BListCommand();
 			command.execute(request, response);
@@ -100,6 +101,7 @@ public class FrontController extends HttpServlet {
 			command.execute(request, response);
 			viewPage = "list.do";
 		}
+		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(viewPage);
 		dispatcher.forward(request,response);
 		

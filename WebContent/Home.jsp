@@ -17,7 +17,10 @@
 	#h{margin-left:330px;}
 	#map{width:50%; height:400px; margin-top:5px;margin-left:5px; border:1px solid #212529;}
 	
-	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
+	#content-right{width:48%; height:400px;}
+	#content-right>iframe{width:800px; height:400px; position:relative; top:-400px; left:880px;}
+	
+	#footer{width: 100%; height: 400px; margin-top:-310px; background-color: #212529;}
 	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
 	#footbox>img{width:60px; height:60px; margin-left:27px;}
 	#footbox>p{color:white; font-size:18px; text-align:center;}
@@ -71,6 +74,8 @@
 	</div>
 </div>
 
+<div id="content-left">
+<br>
 	<h4 id="h">찾아오시는 길</h4>
 	<div id="map"></div>
 		<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=7c735b0e845baf5967c2d6ad8bc8e71b"></script>
@@ -93,6 +98,11 @@
 			// 마커가 지도 위에 표시되도록 설정합니다
 			marker.setMap(map);
 		</script>
+</div>
+
+<div id="content-right">
+	<iframe src="https://www.youtube.com/embed/ZgeC8ggy0C4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 		
 		
 <div id="footer">

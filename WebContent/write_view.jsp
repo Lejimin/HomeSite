@@ -7,6 +7,12 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 <title>게시판</title>
+<style>
+	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
+	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
+	#footbox>img{width:60px; height:60px; margin-left:27px;}
+	#footbox>p{color:white; font-size:18px; text-align:center;}
+</style>
 </head>
 <body>
 <div id="header">
@@ -48,5 +54,17 @@
 		
 	</form>
 </table>
+
+
+<div id="footer">
+	<div id="footbox">
+		<img src="img/Facebookicon.png">
+		<img src="img/Instagramicon.png">
+		<img src="img/Twittericon.png"><br><br><br>
+		<p>Call : 02-050-5555</p><br>
+		<p>Travel Community</p>
+	</div>
+</div>
+
 </body>
 </html>

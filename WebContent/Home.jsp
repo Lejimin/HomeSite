@@ -13,6 +13,12 @@
 	#contimg2{width: 100%; height: 700px;}
 	#contimg3{width: 100%; height: 700px;}
 	#contimg4{width: 100%; height: 700px;}	
+	
+	
+	#footer{width: 100%; height: 400px; margin-top:5px; background-color: #212529;}
+	#footbox{width:300px; height:300px; position:relative; top:100px; left:700px;}
+	#footbox>img{width:60px; height:60px; margin-left:27px;}
+	#footbox>p{color:white; font-size:18px; text-align:center;}
 </style>
 
 </head>
@@ -60,6 +66,17 @@
 	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
 	    <span class="visually-hidden">Next</span>
 	  </button>
+	</div>
+</div>
+
+
+<div id="footer">
+	<div id="footbox">
+		<img src="img/Facebookicon.png">
+		<img src="img/Instagramicon.png">
+		<img src="img/Twittericon.png"><br><br><br>
+		<p>Call : 02-050-5555</p><br>
+		<p>Travel Community</p>
 	</div>
 </div>
 </body>

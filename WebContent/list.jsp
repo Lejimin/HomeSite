@@ -29,7 +29,7 @@
     		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 		      <div class="navbar-nav">
 		        <a class="nav-link active" aria-current="page" href="Home.jsp">Home</a>
-		        <a class="nav-link" href="list.jsp">게시판</a>
+		        <a class="nav-link" href="list.do">게시판</a>
 		        <a class="nav-link" href="Main.jsp">로그아웃</a>
 		        <a class="nav-link" href="Join.jsp">회원가입</a>
 		      </div>
